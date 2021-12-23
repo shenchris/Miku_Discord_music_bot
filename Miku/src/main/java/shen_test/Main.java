@@ -33,9 +33,9 @@ import java.util.function.Supplier;
 public class Main extends ListenerAdapter {
 
 	GuildMusicManager musicManager;
-
+    // put your bot token here
 	public static void main(String[] args) throws Exception {
-		JDA jda = JDABuilder.create("OTIyMTAzOTY0MzExMzg4MjIx.Yb8mPA.6kCYQi62EeEWtnmT7JNRFuj9yPs", GUILD_MESSAGES,
+		JDA jda = JDABuilder.create(token, GUILD_MESSAGES,
 				GUILD_VOICE_STATES).addEventListeners(new Main())
 				.setStatus(OnlineStatus.ONLINE)
 				.setActivity(Activity.playing("type '~info' to start"))
